@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".form_eleve_2">
+
+    <EditText
+        android:id="@+id/temps"
+        android:layout_width="208dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:gravity="center|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/personne"
+        android:layout_width="208dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/temps"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <EditText
+        android:id="@+id/event"
+        android:layout_width="272dp"
+        android:layout_height="203dp"
+        android:ems="10"
+        android:gravity="center|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personne"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/next2"
+        android:layout_width="142dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center|top"
+        android:text=" التالي"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_eleve_4"
+    android:background="@drawable/back4">
+
+    <RadioGroup
+        android:id="@+id/radio1"
+        android:orientation="horizontal"
+        android:layout_width="319dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302">
+
+
+
+            <RadioButton
+                android:id="@+id/tres_bien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أعجبتني كثيرا" />
+
+            <RadioButton
+                android:id="@+id/moyenne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="متوسطة" />
+
+            <RadioButton
+                android:id="@+id/bien"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="جيدة" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:orientation="horizontal"
+        android:layout_width="369dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429">
+
+
+
+            <RadioButton
+                android:id="@+id/oui"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="إستفدت من أحداثها" />
+
+
+            <RadioButton
+                android:id="@+id/peut"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="القليل " />
+
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="لم أستفيد" />
+
+
+    </RadioGroup>
+
+    <EditText
+
+        android:id="@+id/autre"
+        android:layout_width="274dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="132dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/next4"
+        android:layout_width="149dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text=" إلى معلمي"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autre"
+        app:layout_constraintVertical_bias="0.62" />
+</androidx.constraintlayout.widget.ConstraintLayout>
