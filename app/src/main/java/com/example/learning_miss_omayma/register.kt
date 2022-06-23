@@ -63,7 +63,7 @@ class register : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                     val currentUser = auth.currentUser
-                    val currentUSerDatabase =
+                    
                         databaseReference.child(currentUser!!.uid).child((name.text.toString()))
                             .apply {
                                 child("email").setValue(email.text.toString())
@@ -73,7 +73,7 @@ class register : AppCompatActivity() {
                     val intent = Intent(this@register, login_eleve::class.java)
                     startActivity(intent)
                 } else {
-                    Toast.makeText( this, "verifier votre donnees", Toast.LENGTH_SHORT).show()
+                    Toast.makeText( this , "verifier votre donnees", Toast.LENGTH_SHORT).show()
                 }
 
             }
