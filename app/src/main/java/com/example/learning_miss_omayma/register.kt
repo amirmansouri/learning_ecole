@@ -63,7 +63,6 @@ class register : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                     val currentUser = auth.currentUser
-                    
                         databaseReference.child(currentUser!!.uid).child((name.text.toString()))
                             .apply {
                                 child("email").setValue(email.text.toString())
