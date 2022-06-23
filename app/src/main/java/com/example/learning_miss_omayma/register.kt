@@ -73,7 +73,7 @@ class register : AppCompatActivity() {
                     val intent = Intent(this@register, login_eleve::class.java)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this@register, "verifier votre donnees", Toast.LENGTH_SHORT).show()
+                    Toast.makeText( this, "verifier votre donnees", Toast.LENGTH_SHORT).show()
                 }
 
             }
