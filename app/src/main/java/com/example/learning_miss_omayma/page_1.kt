@@ -9,7 +9,10 @@ class page_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page1)
-        maitre.setOnClickListener{}
+        maitre.setOnClickListener{
+            val intent = Intent(this@page_1,login_prof::class.java)
+            startActivity(intent)
+        }
         eleve.setOnClickListener {
             val intent = Intent(this@page_1,login_eleve::class.java)
             startActivity(intent)

@@ -56,21 +56,18 @@ class register : AppCompatActivity() {
                     ///set current user
 
                     ///
-                    val text = spinner.selectedItem
-                    Toast.makeText(
-                        this@register,
-                        "${text}",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                    val spin = spinner.selectedItem
                     val currentUser = auth.currentUser
                         databaseReference.child(currentUser!!.uid).child((name.text.toString()))
                             .apply {
                                 child("email").setValue(email.text.toString())
                                 child("name").setValue(name.text.toString())
-                                child("niveau").setValue(text)
+                                child("niveau").setValue(spin)
                             }
-                    val intent = Intent(this@register, login_eleve::class.java)
+                    val intent = Intent(this@register, classe::class.java)
                     startActivity(intent)
+                    Toast.makeText( this , "compte eleve '${name.text}' bien ajouter", Toast.LENGTH_SHORT).show()
+
                 } else {
                     Toast.makeText( this , "verifier votre donnees", Toast.LENGTH_SHORT).show()
                 }

@@ -6,17 +6,12 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login_eleve.*
-import kotlinx.android.synthetic.main.activity_login_eleve.email
-import kotlinx.android.synthetic.main.activity_login_eleve.password
-import kotlinx.android.synthetic.main.activity_register.*
-import kotlinx.android.synthetic.main.activity_register.view.*
 
-class login_eleve : AppCompatActivity() {
+class login_prof : AppCompatActivity() {
     val auth = FirebaseAuth.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_eleve)
-
+        setContentView(R.layout.activity_login_prof)
         login.setOnClickListener {
             if (checking()) {
                 val email = email.text.toString()
@@ -26,7 +21,7 @@ class login_eleve : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
 
                         if (task.isSuccessful) {
-                            var intent = Intent(this, page_eleve_button::class.java)
+                            var intent = Intent(this, classe::class.java)
                             startActivity(intent)
                             finish()
                         } else {
@@ -52,4 +47,4 @@ class login_eleve : AppCompatActivity() {
         return false
 
     }
-}
+    }
