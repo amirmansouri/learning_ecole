@@ -34,8 +34,6 @@ class form_eleve_1 : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
 
         databaseReference = database.reference.child("user")
-
-//                    Toast.makeText(this, "EmailRegister", Toast.LENGTH_LONG).show()
         val user = Firebase.auth.currentUser
         user.let {
             val name_s = user!!.displayName
@@ -44,7 +42,7 @@ class form_eleve_1 : AppCompatActivity() {
 
         val currentUser = auth.currentUser
         val currentUSerDatabase = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            databaseReference.child(currentUser!!.uid).child("${name_s}").child("historie")
+            databaseReference.child("${name_s}").child("historie")
                 .apply {
 
                     child("titre").setValue(titre.text.toString())

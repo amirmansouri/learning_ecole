@@ -23,7 +23,7 @@ class register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
         val niveau = arrayListOf<String>(
             "السنةالأولى",
-            " السنةالثانية",
+            "السنةالثانية",
             "السنةالثالثة",
             "السنةالرابعة",
             "السنةالخامسة",
@@ -34,13 +34,8 @@ class register : AppCompatActivity() {
         spinner.adapter = adapter
         registerB.setOnClickListener {
             adduser()
-
         }
-
-
     }
-
-
     private fun adduser() {
 
         auth = FirebaseAuth.getInstance()
@@ -58,7 +53,7 @@ class register : AppCompatActivity() {
                     ///
                     val spin = spinner.selectedItem
                     val currentUser = auth.currentUser
-                        databaseReference.child(currentUser!!.uid).child((name.text.toString()))
+                        databaseReference.child((name.text.toString()))
                             .apply {
                                 child("email").setValue(email.text.toString())
                                 child("name").setValue(name.text.toString())
@@ -71,9 +66,6 @@ class register : AppCompatActivity() {
                 } else {
                     Toast.makeText( this , "verifier votre donnees", Toast.LENGTH_SHORT).show()
                 }
-
             }
     }
-
-
 }

@@ -16,12 +16,10 @@ class login_prof : AppCompatActivity() {
             if (checking()) {
                 val email = email.text.toString()
                 val password = password.text.toString()
-
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
-
                         if (task.isSuccessful) {
-                            var intent = Intent(this, classe::class.java)
+                            val intent = Intent(this, classe::class.java)
                             startActivity(intent)
                             finish()
                         } else {
@@ -34,7 +32,6 @@ class login_prof : AppCompatActivity() {
                 Toast.makeText(this, "detail", Toast.LENGTH_LONG).show()
             }
         }
-
     }
 
     private fun checking(): Boolean {
@@ -47,4 +44,4 @@ class login_prof : AppCompatActivity() {
         return false
 
     }
-    }
+}

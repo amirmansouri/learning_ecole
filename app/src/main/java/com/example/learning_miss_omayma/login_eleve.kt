@@ -26,7 +26,7 @@ class login_eleve : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
 
                         if (task.isSuccessful) {
-                            var intent = Intent(this, page_eleve_button::class.java)
+                            val intent = Intent(this, page_eleve_button::class.java)
                             startActivity(intent)
                             finish()
                         } else {

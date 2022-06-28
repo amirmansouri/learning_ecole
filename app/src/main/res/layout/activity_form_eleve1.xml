@@ -11,64 +11,73 @@
         android:id="@+id/titre"
         android:layout_width="209dp"
         android:layout_height="69dp"
-        android:layout_marginTop="224dp"
         android:ems="10"
 
         android:gravity="center|top"
         android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.341" />
 
     <EditText
         android:id="@+id/ecrivian"
-        android:layout_width="207dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="209dp"
+        android:layout_height="69dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="center|top"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre"
-        android:autofillHints=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
         tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/maison"
-        android:layout_width="212dp"
-        android:layout_height="73dp"
+        android:layout_width="209dp"
+        android:layout_height="69dp"
 
-        android:ems="10"
-        android:gravity="center|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/lieu"
-        app:layout_constraintTop_toBottomOf="@+id/ecrivian"
-        app:layout_constraintVertical_bias="0.648"
-        tools:layout_editor_absoluteX="-3dp" />
-
-    <EditText
-        android:id="@+id/lieu"
-        android:layout_width="211dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="156dp"
         android:ems="10"
         android:gravity="center|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <EditText
+        android:id="@+id/lieu"
+        android:layout_width="209dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:gravity="center|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
 
     <TextView
         android:id="@+id/next"
         android:layout_width="127dp"
         android:layout_height="51dp"
+        android:background="#2B458E"
         android:gravity="center"
         android:text=" التالي"
         android:textSize="30dp"
-        android:background="#2B458E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lieu"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.904" />
 </androidx.constraintlayout.widget.ConstraintLayout>
